@@ -7,28 +7,28 @@ main()
 	int right=0;
 	int a,b,c;
 	int yn;
-	printf("»¶Ó­Ê¹ÓÃÁ½Î»Êı¼Ó·¨Á·Ï°³ÌĞò¡£");
+	printf("æ¬¢è¿ä½¿ç”¨ä¸¤ä½æ•°åŠ æ³•ç»ƒä¹ ç¨‹åºã€‚");
 	printf("****************************");
 	srand(time(NULL));
 	while (1)
 	{   num++;
-	    printf("\nµÚ%dÌâ",num);
+	    printf("\nç¬¬%dé¢˜",num);
 		a=rand()%100;
 		b=rand()%100;
 		printf("%d+%d=",a,b);
 		scanf("%d",&c);
 		if(c==a+b)
-		{  printf("¹§Ï²Äã£¬´ğ¶ÔÁË£¡");
+		{  printf("æ­å–œä½ ï¼Œç­”å¯¹äº†ï¼");
 		right++;
 		}
 		else
-			printf("´ğ´íÁË£¬ÕıÈ·´ğ°¸ÊÇ£º%d",a+b);
-		printf("Òª¼ÌĞøÁ·Ï°Âğ£¿(0=ÍÆ³ö£»·Ç0=¼ÌĞø)");
+			printf("ç­”é”™äº†ï¼Œæ­£ç¡®ç­”æ¡ˆæ˜¯ï¼š%d",a+b);
+		printf("è¦ç»§ç»­ç»ƒä¹ å—ï¼Ÿ(0=æ¨å‡ºï¼›é0=ç»§ç»­)");
 			scanf("%d",&yn);
-		if(yn=0)break;
+		if(yn==0)break;
 	}
-	printf("\n±¾´ÎÁ·Ï°Äã×öÁË%dÌâ£¬",num);
-	printf("ÆäÖĞ´ğ¶ÔÁË%dÌâ£¬´ğ´íÁË%dÌâ",right,num-right);
-	printf("\nÕıÈ·ÂÊÎª%5.lf%%\n",(float)right/num*100);
-	printf("×£ÄãÑ§Ï°½ø²½£¬ÔÙ¼û£¡\n");
+	printf("\næœ¬æ¬¡ç»ƒä¹ ä½ åšäº†%dé¢˜ï¼Œ",num);
+	printf("å…¶ä¸­ç­”å¯¹äº†%dé¢˜ï¼Œç­”é”™äº†%dé¢˜",right,num-right);
+	printf("\næ­£ç¡®ç‡ä¸º%5.lf%%\n",(float)right/num*100);
+	printf("ç¥ä½ å­¦ä¹ è¿›æ­¥ï¼Œå†è§ï¼\n");
 }
